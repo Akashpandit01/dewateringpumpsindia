@@ -1,0 +1,107 @@
+.text-overlay {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+  width: 90%;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  animation: fadeDown 1.5s ease-out;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.sub-text {
+  font-size: 1rem;
+  margin-top: 15px;
+  padding: 8px 16px;
+  color: #222;
+  background: #ffc107;
+  border-radius: 40px;
+  display: inline-block;
+  animation: fadeUp 2s ease-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 1.8rem;
+    padding: 8px 15px;
+  }
+
+  .sub-text {
+    font-size: 0.9rem;
+    padding: 6px 14px;
+  }
+
+  .text-overlay {
+    top: 10%;
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 1.5rem;
+    padding: 6px 12px;
+  }
+
+  .sub-text {
+    font-size: 0.85rem;
+    padding: 5px 12px;
+  }
+
+  .text-overlay {
+    top: 8%;
+    width: 100%;
+  }
+}
