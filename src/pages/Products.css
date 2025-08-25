@@ -1,0 +1,95 @@
+/* ===== Section Title ===== */
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: orange;
+  border-radius: 2px;
+}
+
+/* ===== Card Styles ===== */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+/* ===== Product Image ===== */
+.card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+/* ===== Features List ===== */
+ul {
+  padding-left: 18px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+/* ===== Responsive Image for Product Info Section ===== */
+.img-fluid {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* ===== Responsive Layout ===== */
+@media (max-width: 992px) {
+  .card img {
+    height: 180px;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card img {
+    height: 160px;
+  }
+  .section-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+  .card img {
+    height: 150px;
+  }
+  .section-title {
+    font-size: 1.3rem;
+  }
+}

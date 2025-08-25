@@ -23,46 +23,10 @@ const CustomNavbar = () => {
           <nav className="ms-auto navbar-nav">
 
             <NavLink to="/" className="custom-link">Home</NavLink>
+            <NavLink to="/about" className="custom-link">About Us</NavLink>
 
-            {/* About Us Dropdown */}
-            <div className="dropdown-wrapper">
-              <div className="custom-link dropdown-toggle">About Us</div>
-              <div className="dropdown-menu">
-                <NavLink to="/about/introduction" className="custom-link">Introduction</NavLink>
-                <NavLink to="/about/management" className="custom-link">About Management</NavLink>
-                <NavLink to="/about/profile" className="custom-link">Company Profile</NavLink>
-                <NavLink to="/about/certification" className="custom-link">Registered Certification</NavLink>
-              </div>
-            </div>
-
-            {/* Products Dropdown with Nested Levels */}
-            <div className="dropdown-wrapper">
-              <div className="custom-link dropdown-toggle">Products</div>
-              <div className="dropdown-menu">
-
-                <div className="dropdown-submenu">
-                  <div className="custom-link dropdown-toggle">Dewatering Pumps</div>
-                  <div className="dropdown-menu right">
-                    <NavLink to="/products/AK-1-5150-2P" className="custom-link">AK-1-5150-2P</NavLink>
-                    <NavLink to="/products/AK-1-5350-2P" className="custom-link">AK-1-5350-2P</NavLink>
-                    <NavLink to="/products/AK-1-5360-2P" className="custom-link">AK-1-5360-2P</NavLink>
-                    <NavLink to="/products/AK-2350-2P" className="custom-link">AK-2350-2P</NavLink>
-                  </div>
-                </div>
-
-                <div className="dropdown-submenu">
-                  <div className="custom-link dropdown-toggle">Non-Clog Pumps</div>
-                  <div className="dropdown-menu right">
-                    <NavLink to="/products/SK-3350-NC" className="custom-link">SK 3350 NC</NavLink>
-                    <NavLink to="/products/SK-6350-NC" className="custom-link">SK 6350 NC</NavLink>
-                    <NavLink to="/products/SK-8350-NC" className="custom-link">SK 8350 NC</NavLink>
-                    <NavLink to="/products/SK-10350-NC" className="custom-link">SK 10350 NC</NavLink>
-                  </div>
-                </div>
-
-                <NavLink to="/products/tech-specs" className="custom-link">TECH-SPECIFICATIONS</NavLink>
-              </div>
-            </div>
+            {/* Replaced Dropdown with Direct Products Page Link */}
+            <NavLink to="/products" className="custom-link">Products</NavLink>
 
             <NavLink to="/services" className="custom-link">Services</NavLink>
             <NavLink to="/facilities" className="custom-link">Facilities</NavLink>
